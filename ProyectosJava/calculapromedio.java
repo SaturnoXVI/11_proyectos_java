@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class calculapro{
+public class calculapromedio{
     public static void main(String[] args) { 
 
         String nom = JOptionPane.showInputDialog("Escriba el nombre del estudiante ");
