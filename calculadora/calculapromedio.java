@@ -11,7 +11,7 @@ public class calculapromedio{
 
         double promedio = (nota1 + nota2 + nota3 + nota4) / 4;
 
-        String mensaje =  "El nombre del estudiante "+ " "+nom +"\n" + "El promedio es: " + promedio;
+        String mensaje =  "El nombre del estudiante "+ " "+nom +"\n" + "El promedio es : " + promedio;
 
         if (promedio > 90) {
             mensaje += "\nEl estudiante pasa";
