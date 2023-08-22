@@ -2,9 +2,11 @@ import javax.swing.JOptionPane;
 
 public class numeroaleatorio {
     public static void main(String[] args) {
-        String nom = JOptionPane.showInputDialog("Ingrese su nombre:");
-        String minStr = JOptionPane.showInputDialog("Ingrese el numero minimo");
-        String maxStr = JOptionPane.showInputDialog("Ingrese el valor maximo ");
+        
+        String nom = JOptionPane.showInputDialog("Ingrese su nombre  ");
+        String minStr = JOptionPane.showInputDialog("Ingrese un numero minimo: ");
+        
+        String maxStr = JOptionPane.showInputDialog("Ingrese un numero maximo: ");
         
         try {
             
@@ -14,11 +16,10 @@ public class numeroaleatorio {
             
             int numeroAleatorio = min + (int) (Math.random() * (max - min + 1));
             
-           
-            JOptionPane.showMessageDialog(null, "Hola. "+ nom +"\n"
-            +"El numero aleatorio generado: " + numeroAleatorio);
+            
+            JOptionPane.showMessageDialog(null,"Hola " +nom +"\n"+ "Número aleatorio generado: " + numeroAleatorio);
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "Error porfavor nngrese valores numericos válidos.");
+            JOptionPane.showMessageDialog(null, "Entrada inválida. Ingrese valores numéricos válidos.");
         }
     }
 }
