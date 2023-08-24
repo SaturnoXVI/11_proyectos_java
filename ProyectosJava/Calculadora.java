@@ -1,6 +1,6 @@
 /**
  *
- * @author Juan
+ * @author Juan c
  */
 
 import java.util.Scanner;
